@@ -1,45 +1,69 @@
-# 🚗 Car Price Dataset Analysis
+# 🚗 Car Dataset Analysis
 
 ## 📌 Project Overview
 
-This project focuses on analyzing a car price dataset using Python and Pandas. The goal is to explore car-related information, perform data analysis, and identify patterns and relationships between different features, such as price, mileage, fuel type, transmission, manufacturing year, engine size, and brand.
+This project focuses on analyzing a car dataset using Python and Pandas. The assignment explores car prices, mileage, fuel types, transmission types, manufacturing years, engine sizes, and brands to understand the dataset and identify useful insights.
 
 ## 🎯 Objectives
 
-- Analyze car prices and other vehicle attributes.
-- Calculate the average car price by fuel type.
-- Identify the most expensive and least expensive cars.
+- Analyze car prices and vehicle attributes.
+- Find cars with mileage greater than 200,000.
 - Analyze the distribution of cars by transmission type.
+- Identify the car model with the highest price.
+- Calculate the average price by fuel type.
 - Find cars manufactured in 2020 or later.
 - Calculate the average engine size for each brand.
-- Identify cars with mileage greater than 200,000.
+- Identify the car with the lowest mileage.
 - Calculate the correlation between mileage and price.
 
 ## 🛠️ Technologies Used
 
-- **Python** – Programming language
-- **Pandas** – Data manipulation and analysis
-- **NumPy** – Numerical operations
-- **Matplotlib** – Data visualization (if used)
-- **Seaborn** – Statistical visualization (if used)
-- **Jupyter Notebook / Google Colab** – Development environment
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook / Google Colab
 
 ## 📂 Project Structure
 
 ```text
-Car-Price-Dataset-Analysis/
+Car_dataset_assignment/
 │
-├── data/
-│   └── car_price_dataset.csv
-│
-├── car_price_analysis.ipynb
-├── README.md
-└── requirements.txt
+├── car_price_dataset.csv
+├── Car_Dataset_Analysis.ipynb
+└── README.md
 ```
 
-*Note: Update the filenames and folder structure according to your actual project.*
+*Note: Update the filenames above to match the actual files in your repository.*
 
-## 📊 Key Analysis Questions
+## ⚙️ Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Vedant-Mallamwar/Car_dataset_assignment.git
+```
+
+### 2. Open the project folder
+
+```bash
+cd Car_dataset_assignment
+```
+
+### 3. Install the required libraries
+
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+
+### 4. Run the notebook
+
+Open the Jupyter Notebook file or upload it to Google Colab to execute the analysis.
+
+## 📊 Data Analysis Questions
+
+The assignment covers the following questions:
 
 1. What is the average price of cars?
 2. How many cars have a mileage greater than 200,000?
@@ -49,48 +73,20 @@ Car-Price-Dataset-Analysis/
 6. How many cars were manufactured in 2020 or later?
 7. What is the average engine size for each brand?
 8. Which car has the lowest mileage?
-9. What is the relationship between mileage and price?
+9. What is the correlation between mileage and price?
 
-## ⚙️ Installation and Setup
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/Car-Price-Dataset-Analysis.git
-```
-
-### 2. Navigate to the project folder
-
-```bash
-cd Car-Price-Dataset-Analysis
-```
-
-### 3. Install the required libraries
-
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
-```
-
-### 4. Run the notebook
-
-```bash
-jupyter notebook
-```
-
-Alternatively, upload the notebook to Google Colab and run the cells.
-
-## 💻 Example Python Code
+## 💻 Sample Python Code
 
 ```python
 import pandas as pd
 
 # Load the dataset
-df = pd.read_csv("data/car_price_dataset.csv")
+df = pd.read_csv("car_price_dataset.csv")
 
 # Display the first five rows
 print(df.head())
 
-# Display dataset information
+# Check dataset information
 print(df.info())
 
 # Calculate average car price
@@ -100,35 +96,24 @@ print(df["Price"].mean())
 print(df["Mileage"].corr(df["Price"]))
 ```
 
-**Important:** Adjust the CSV path and column names to match your actual dataset.
+*Note: Adjust the file path and column names according to your dataset.*
 
-## 📈 Expected Outcomes
+## 📈 Key Learning Outcomes
 
-- Better understanding of car price trends.
-- Identification of relationships between mileage and price.
-- Comparison of prices across fuel types and brands.
-- Insights into transmission types and vehicle manufacturing years.
-- Practical experience with Python-based data analysis.
-
-*Actual findings and numerical results should be added after analyzing the dataset.*
-
-## 🎓 Learning Outcomes
-
-Through this assignment, I practiced:
-
-- Loading and inspecting datasets using Pandas.
-- Selecting and filtering rows and columns.
-- Applying statistical functions such as `mean()` and `corr()`.
-- Grouping data using `groupby()`.
-- Sorting and identifying minimum and maximum values.
-- Answering real-world questions using data analysis.
+- Data loading and inspection using Pandas.
+- Filtering and selecting data.
+- Calculating averages and correlations.
+- Grouping and analyzing data by categories.
+- Identifying maximum and minimum values.
+- Solving practical data analysis problems using Python.
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Vedant Mallamwar**
 
-GitHub: [Your GitHub Profile](https://github.com/YOUR-USERNAME)
+- GitHub Profile: [Vedant-Mallamwar](https://github.com/Vedant-Mallamwar)
+- Project Repository: [Car_dataset_assignment](https://github.com/Vedant-Mallamwar/Car_dataset_assignment)
 
 ## 📄 License
 
-This project is intended for educational and learning purposes.
+This project is created for educational purposes as part of a data analysis assignment.
